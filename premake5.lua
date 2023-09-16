@@ -1,4 +1,4 @@
-workspace "cpp-template"
+workspace "cpp-enumerable"
 
     configurations 
     { 
@@ -25,6 +25,6 @@ workspace "cpp-template"
 outputDir = "%{cfg.buildcfg}-%{cfg.system}-%{cfg.architecture}"
 
 IncludeDir = {}
-IncludeDir["TemplateProject"] 	= "%{wks.location}/TemplateProject/src"
+IncludeDir["cpp_enumerable"] 	= "%{wks.location}/cpp-enumerable/src"
 
-include "TemplateProject"
+include "cpp-enumerable"

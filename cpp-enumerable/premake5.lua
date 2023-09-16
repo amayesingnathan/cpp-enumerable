@@ -1,4 +1,4 @@
-project "TemplateProject"
+project "cpp-enumerable"
     language "C++"
     cppdialect "C++20"
 		
@@ -21,7 +21,7 @@ project "TemplateProject"
 
     includedirs
     {
-        "%{IncludeDir.TemplateProject}",
+        "%{IncludeDir.cpp_enumerable}",
     }
 
 	links
@@ -29,12 +29,12 @@ project "TemplateProject"
 	}
 	
     filter "system:windows"
-        kind "ProjectTypeWin"
+        kind "StaticLib"
         staticruntime "off"
         systemversion "latest"
 		
 	filter "system:linux"
-        kind "ProjectTypeLinux"
+        kind "ConsoleApp"
         staticruntime "off"
         pic "On"
         systemversion "latest"
