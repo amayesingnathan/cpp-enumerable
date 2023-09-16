@@ -1,0 +1,20 @@
+#Binaries
+bin/
+obj/
+
+#VS files
+.vs/
+.vscode/
+**.sln
+**.vcxproj
+**.vcxproj.filters
+**.vcxproj.user
+**.csproj
+**.csproj.user
+
+#Makefiles
+Makefile
+Makefile.in
+
+#Python cache files
+__pycache__/
